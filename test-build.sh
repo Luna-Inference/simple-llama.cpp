@@ -8,7 +8,7 @@ echo 'build'
 # Ensure GGUF model is present
 if [ ! -f "gguf/Llama-3.2-1B.Q8_0.gguf" ]; then
   echo "Model not found, downloading..."
-  (cd gguf && wget https://huggingface.co/QuantFactory/Llama-3.2-1B-GGUF/resolve/main/Llama-3.2-1B.Q8_0.gguf)
+  (cd gguf && wget -q https://huggingface.co/QuantFactory/Llama-3.2-1B-GGUF/resolve/main/Llama-3.2-1B.Q8_0.gguf)
 fi
 
 # Running test
