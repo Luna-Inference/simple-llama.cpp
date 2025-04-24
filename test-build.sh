@@ -5,5 +5,13 @@ echo 'cmake build'
 cmake --build build --config Release -j 8
 echo 'build'
 
+# Ensure GGUF model is present
+if [ ! -f "gguf/Llama-3.2-1B.Q8_0.gguf" ]; then
+  echo "Model not found, downloading..."
+  (cd gguf && wget https://huggingface.co/QuantFactory/Llama-3.2-1B-GGUF/resolve/main/Llama-3.2-1B.Q8_0.gguf)
+fi
+
+# Running test
+
 echo 'running test'
-./build/bin/llama-cli -m ./gguf/1b-q8_0.gguf -p "Hello, how are you?" -n 128 -no-cnv
+./build/bin/llama-cli -m ./gguf/Llama-3.2-1B.Q8_0.gguf -p "Hello, how are you?" -n 128 -no-cnv
