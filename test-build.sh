@@ -22,7 +22,7 @@ cd gh-pages
 echo '<pre>' >> index.html
 cat ../test_output.txt >> index.html
 echo '</pre>' >> index.html
-# git config user.name "ThomasVuNguyen"
+git config user.name "tungvunguyennguyen@gmail.com"
 git config user.email "tungvunguyennguyen@gmail.com"
 git add index.html
 git commit -m "Update index.html with latest test output"
