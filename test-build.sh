@@ -17,7 +17,7 @@ echo 'running test'
 ./build/bin/llama-cli -m ./gguf/Llama-3.2-1B.Q8_0.gguf -p "Hello, how are you?" -n 128 -no-cnv | tee test_output.txt
 
 # Publish test output to GitHub Pages
-git clone https://x-access-token:${GITHUB_TOKEN}@github.com/Luna-Inference/Luna-inference.github.io.git gh-pages
+git clone https://x-access-token:${GH_PAGES_TOKEN}@github.com/Luna-Inference/Luna-inference.github.io.git gh-pages
 cd gh-pages
 echo '<pre>' >> index.html
 cat ../test_output.txt >> index.html

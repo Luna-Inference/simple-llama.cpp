@@ -9,6 +9,8 @@ on:
 jobs:
   test-build:
     runs-on: ubuntu-24.04-arm
+    env:
+      GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
