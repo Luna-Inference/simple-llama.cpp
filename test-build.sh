@@ -4,7 +4,7 @@ cmake -B build
 echo 'cmake build'
 cmake --build build --config Release -j 8
 echo 'build'
-
+prompt="Tell me a fun fact"
 # Record source commit
 SRC_COMMIT=$(git rev-parse HEAD)
 echo "Source commit: $SRC_COMMIT"
@@ -19,7 +19,7 @@ fi
 echo 'Running prompt test and benchmark'
 # Capture prompt output
 echo 'Prompt Output:' > test_output.txt
-./build/bin/llama-cli -m ./gguf/Llama-3.2-1B.Q8_0.gguf -p "Hello, how are you?" -n 128 -no-cnv >> test_output.txt
+./build/bin/llama-cli -m ./gguf/Llama-3.2-1B.Q8_0.gguf -p ${prompt} -n 128 -no-cnv >> test_output.txt
 echo '' >> test_output.txt
 # Capture benchmark results
 echo 'Benchmark Results:' >> test_output.txt
@@ -37,14 +37,13 @@ echo "About to clone pages repo with URL: https://x-access-token:${GH_PAGES_TOKE
 # Publish test output to GitHub Pages
 git clone https://x-access-token:${GH_PAGES_TOKEN}@github.com/ThomasVuNguyen/thomasvunguyen.github.io.git gh-pages
 cd gh-pages
-echo "<p>Source commit: ${SRC_COMMIT}</p>" >> index.html
-echo '<h1>LLAMA Test Results</h1>' >> index.html
-echo '<h2>Prompt Output</h2>' >> index.html
+
+echo "Prompt:" >> index.html
+echo "Tell me a fun fact" >> index.html
 echo '<pre>' >> index.html
 sed -n '1,/^Benchmark Results:/p' ../test_output.txt >> index.html
 echo '</pre>' >> index.html
 
-echo '<h2>Benchmark Results</h2>' >> index.html
 echo '<pre>' >> index.html
 sed -n '/^Benchmark Results:/,$p' ../test_output.txt >> index.html
 echo '</pre>' >> index.html
