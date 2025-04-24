@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "../../bin/llama-llava-cli"
   "../../bin/llama-llava-cli.pdb"
-  "CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o"
-  "CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o.d"
+  "CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o"
+  "CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

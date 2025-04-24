@@ -17,7 +17,7 @@ To mitigate it, you can increase values in `n_predict`, `kv_size`.
 
 ```shell
 cd ../../..
-cmake -B build
+cmake -B build -DLLAMA_CURL=ON
 cmake --build build --target llama-server
 ```
 

@@ -1,30 +1,30 @@
 Performing C++ SOURCE FILE Test GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E failed with the following output:
-Change Dir: /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-D16GTF
+Change Dir: /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-xGtzTM
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e5ac3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e5ac3.dir/build.make CMakeFiles/cmTC_e5ac3.dir/build
-gmake[1]: Entering directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-D16GTF'
-Building CXX object CMakeFiles/cmTC_e5ac3.dir/src.cxx.o
-/usr/bin/c++ -DGGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E  -mfp16-format=ieee -std=gnu++17 -o CMakeFiles/cmTC_e5ac3.dir/src.cxx.o -c /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-D16GTF/src.cxx
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_41f08/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_41f08.dir/build.make CMakeFiles/cmTC_41f08.dir/build
+gmake[1]: Entering directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-xGtzTM'
+Building CXX object CMakeFiles/cmTC_41f08.dir/src.cxx.o
+/usr/bin/c++ -DGGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E  -mfp16-format=ieee -std=gnu++17 -o CMakeFiles/cmTC_41f08.dir/src.cxx.o -c /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-xGtzTM/src.cxx
 c++: error: unrecognized command-line option '-mfp16-format=ieee'
-gmake[1]: *** [CMakeFiles/cmTC_e5ac3.dir/build.make:78: CMakeFiles/cmTC_e5ac3.dir/src.cxx.o] Error 1
-gmake[1]: Leaving directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-D16GTF'
-gmake: *** [Makefile:127: cmTC_e5ac3/fast] Error 2
+gmake[1]: *** [CMakeFiles/cmTC_41f08.dir/build.make:78: CMakeFiles/cmTC_41f08.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-xGtzTM'
+gmake: *** [Makefile:127: cmTC_41f08/fast] Error 2
 
 
 Source file was:
 int main() { return 0; }
 
 Performing C++ SOURCE FILE Test GGML_MACHINE_SUPPORTS_i8mm failed with the following compile output:
-Change Dir: /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-P1PL4b
+Change Dir: /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-dPfsQS
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b2873/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b2873.dir/build.make CMakeFiles/cmTC_b2873.dir/build
-gmake[1]: Entering directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-P1PL4b'
-Building CXX object CMakeFiles/cmTC_b2873.dir/src.cxx.o
-/usr/bin/c++ -DGGML_MACHINE_SUPPORTS_i8mm  -mcpu=ares+crypto+noprofile+i8mm -std=gnu++17 -o CMakeFiles/cmTC_b2873.dir/src.cxx.o -c /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-P1PL4b/src.cxx
-Linking CXX executable cmTC_b2873
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2873.dir/link.txt --verbose=1
-/usr/bin/c++  -mcpu=ares+crypto+noprofile+i8mm CMakeFiles/cmTC_b2873.dir/src.cxx.o -o cmTC_b2873 
-gmake[1]: Leaving directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-P1PL4b'
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cbe3e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cbe3e.dir/build.make CMakeFiles/cmTC_cbe3e.dir/build
+gmake[1]: Entering directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-dPfsQS'
+Building CXX object CMakeFiles/cmTC_cbe3e.dir/src.cxx.o
+/usr/bin/c++ -DGGML_MACHINE_SUPPORTS_i8mm  -mcpu=ares+crypto+noprofile+i8mm -std=gnu++17 -o CMakeFiles/cmTC_cbe3e.dir/src.cxx.o -c /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-dPfsQS/src.cxx
+Linking CXX executable cmTC_cbe3e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbe3e.dir/link.txt --verbose=1
+/usr/bin/c++  -mcpu=ares+crypto+noprofile+i8mm CMakeFiles/cmTC_cbe3e.dir/src.cxx.o -o cmTC_cbe3e 
+gmake[1]: Leaving directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-dPfsQS'
 
 
 ...and run output:
@@ -35,16 +35,16 @@ Source file was:
 int main() { int8x16_t _a, _b; volatile int32x4_t _s = vmmlaq_s32(_s, _a, _b); return 0; }
 
 Performing C++ SOURCE FILE Test GGML_MACHINE_SUPPORTS_sve failed with the following compile output:
-Change Dir: /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-r3aozT
+Change Dir: /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-jbpiUM
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8169a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8169a.dir/build.make CMakeFiles/cmTC_8169a.dir/build
-gmake[1]: Entering directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-r3aozT'
-Building CXX object CMakeFiles/cmTC_8169a.dir/src.cxx.o
-/usr/bin/c++ -DGGML_MACHINE_SUPPORTS_sve  -mcpu=ares+crypto+noprofile+sve -std=gnu++17 -o CMakeFiles/cmTC_8169a.dir/src.cxx.o -c /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-r3aozT/src.cxx
-Linking CXX executable cmTC_8169a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8169a.dir/link.txt --verbose=1
-/usr/bin/c++  -mcpu=ares+crypto+noprofile+sve CMakeFiles/cmTC_8169a.dir/src.cxx.o -o cmTC_8169a 
-gmake[1]: Leaving directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-r3aozT'
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_67fcc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_67fcc.dir/build.make CMakeFiles/cmTC_67fcc.dir/build
+gmake[1]: Entering directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-jbpiUM'
+Building CXX object CMakeFiles/cmTC_67fcc.dir/src.cxx.o
+/usr/bin/c++ -DGGML_MACHINE_SUPPORTS_sve  -mcpu=ares+crypto+noprofile+sve -std=gnu++17 -o CMakeFiles/cmTC_67fcc.dir/src.cxx.o -c /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-jbpiUM/src.cxx
+Linking CXX executable cmTC_67fcc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67fcc.dir/link.txt --verbose=1
+/usr/bin/c++  -mcpu=ares+crypto+noprofile+sve CMakeFiles/cmTC_67fcc.dir/src.cxx.o -o cmTC_67fcc 
+gmake[1]: Leaving directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-jbpiUM'
 
 
 ...and run output:
@@ -55,17 +55,17 @@ Source file was:
 int main()  { svfloat32_t _a, _b; volatile svfloat32_t _c = svadd_f32_z(svptrue_b8(), _a, _b); return 0; }
 
 Performing C++ SOURCE FILE Test GGML_MACHINE_SUPPORTS_sme failed with the following compile output:
-Change Dir: /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-KZD7jB
+Change Dir: /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-VI5UX1
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_02764/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_02764.dir/build.make CMakeFiles/cmTC_02764.dir/build
-gmake[1]: Entering directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-KZD7jB'
-Building CXX object CMakeFiles/cmTC_02764.dir/src.cxx.o
-/usr/bin/c++ -DGGML_MACHINE_SUPPORTS_sme  -mcpu=ares+crypto+noprofile+sme -std=gnu++17 -o CMakeFiles/cmTC_02764.dir/src.cxx.o -c /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-KZD7jB/src.cxx
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_85428/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_85428.dir/build.make CMakeFiles/cmTC_85428.dir/build
+gmake[1]: Entering directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-VI5UX1'
+Building CXX object CMakeFiles/cmTC_85428.dir/src.cxx.o
+/usr/bin/c++ -DGGML_MACHINE_SUPPORTS_sme  -mcpu=ares+crypto+noprofile+sme -std=gnu++17 -o CMakeFiles/cmTC_85428.dir/src.cxx.o -c /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-VI5UX1/src.cxx
 cc1plus: error: invalid feature modifier ‘sme’ in ‘-mcpu=ares+crypto+noprofile+sme’
 cc1plus: note: valid arguments are: fp simd crypto crc lse fp16 rcpc rdma dotprod aes sha2 sha3 sm4 fp16fml sve profile rng memtag sb ssbs predres sve2 sve2-sm4 sve2-aes sve2-sha3 sve2-bitperm tme i8mm f32mm f64mm bf16 flagm pauth ls64 mops; did you mean ‘sm4’?
-gmake[1]: *** [CMakeFiles/cmTC_02764.dir/build.make:78: CMakeFiles/cmTC_02764.dir/src.cxx.o] Error 1
-gmake[1]: Leaving directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-KZD7jB'
-gmake: *** [Makefile:127: cmTC_02764/fast] Error 2
+gmake[1]: *** [CMakeFiles/cmTC_85428.dir/build.make:78: CMakeFiles/cmTC_85428.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-VI5UX1'
+gmake: *** [Makefile:127: cmTC_85428/fast] Error 2
 
 
 ...and run output:
@@ -76,17 +76,17 @@ Source file was:
 __arm_locally_streaming int main() { __asm__ volatile("smstart; smstop;"); return 0; }
 
 Performing C++ SOURCE FILE Test GGML_MACHINE_SUPPORTS_nosme failed with the following output:
-Change Dir: /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-taX5ae
+Change Dir: /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-AojTHO
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_03687/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_03687.dir/build.make CMakeFiles/cmTC_03687.dir/build
-gmake[1]: Entering directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-taX5ae'
-Building CXX object CMakeFiles/cmTC_03687.dir/src.cxx.o
-/usr/bin/c++ -DGGML_MACHINE_SUPPORTS_nosme  -mcpu=ares+crypto+noprofile+nosme -std=gnu++17 -o CMakeFiles/cmTC_03687.dir/src.cxx.o -c /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-taX5ae/src.cxx
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_40465/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_40465.dir/build.make CMakeFiles/cmTC_40465.dir/build
+gmake[1]: Entering directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-AojTHO'
+Building CXX object CMakeFiles/cmTC_40465.dir/src.cxx.o
+/usr/bin/c++ -DGGML_MACHINE_SUPPORTS_nosme  -mcpu=ares+crypto+noprofile+nosme -std=gnu++17 -o CMakeFiles/cmTC_40465.dir/src.cxx.o -c /home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-AojTHO/src.cxx
 cc1plus: error: invalid feature modifier ‘sme’ in ‘-mcpu=ares+crypto+noprofile+nosme’
 cc1plus: note: valid arguments are: fp simd crypto crc lse fp16 rcpc rdma dotprod aes sha2 sha3 sm4 fp16fml sve profile rng memtag sb ssbs predres sve2 sve2-sm4 sve2-aes sve2-sha3 sve2-bitperm tme i8mm f32mm f64mm bf16 flagm pauth ls64 mops; did you mean ‘sm4’?
-gmake[1]: *** [CMakeFiles/cmTC_03687.dir/build.make:78: CMakeFiles/cmTC_03687.dir/src.cxx.o] Error 1
-gmake[1]: Leaving directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-taX5ae'
-gmake: *** [Makefile:127: cmTC_03687/fast] Error 2
+gmake[1]: *** [CMakeFiles/cmTC_40465.dir/build.make:78: CMakeFiles/cmTC_40465.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/thomas/simple-llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-AojTHO'
+gmake: *** [Makefile:127: cmTC_40465/fast] Error 2
 
 
 Source file was:

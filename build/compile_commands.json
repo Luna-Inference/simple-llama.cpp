@@ -265,16 +265,6 @@
   "file": "/home/thomas/simple-llama.cpp/common/speculative.cpp"
 },
 {
-  "directory": "/home/thomas/simple-llama.cpp/build/examples/batched-bench",
-  "command": "/usr/bin/c++ -DGGML_BACKEND_SHARED -DGGML_SHARED -DGGML_USE_CPU -DLLAMA_SHARED -DLLAMA_USE_CURL -I/home/thomas/simple-llama.cpp/examples -I/home/thomas/simple-llama.cpp/common/. -I/home/thomas/simple-llama.cpp/src/. -I/home/thomas/simple-llama.cpp/src/../include -I/home/thomas/simple-llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o CMakeFiles/llama-batched-bench.dir/batched-bench.cpp.o -c /home/thomas/simple-llama.cpp/examples/batched-bench/batched-bench.cpp",
-  "file": "/home/thomas/simple-llama.cpp/examples/batched-bench/batched-bench.cpp"
-},
-{
-  "directory": "/home/thomas/simple-llama.cpp/build/examples/batched",
-  "command": "/usr/bin/c++ -DGGML_BACKEND_SHARED -DGGML_SHARED -DGGML_USE_CPU -DLLAMA_SHARED -DLLAMA_USE_CURL -I/home/thomas/simple-llama.cpp/examples -I/home/thomas/simple-llama.cpp/common/. -I/home/thomas/simple-llama.cpp/src/. -I/home/thomas/simple-llama.cpp/src/../include -I/home/thomas/simple-llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o CMakeFiles/llama-batched.dir/batched.cpp.o -c /home/thomas/simple-llama.cpp/examples/batched/batched.cpp",
-  "file": "/home/thomas/simple-llama.cpp/examples/batched/batched.cpp"
-},
-{
   "directory": "/home/thomas/simple-llama.cpp/build/examples/embedding",
   "command": "/usr/bin/c++ -DGGML_BACKEND_SHARED -DGGML_SHARED -DGGML_USE_CPU -DLLAMA_SHARED -DLLAMA_USE_CURL -I/home/thomas/simple-llama.cpp/examples -I/home/thomas/simple-llama.cpp/common/. -I/home/thomas/simple-llama.cpp/src/. -I/home/thomas/simple-llama.cpp/src/../include -I/home/thomas/simple-llama.cpp/ggml/src/../include -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o CMakeFiles/llama-embedding.dir/embedding.cpp.o -c /home/thomas/simple-llama.cpp/examples/embedding/embedding.cpp",
   "file": "/home/thomas/simple-llama.cpp/examples/embedding/embedding.cpp"
@@ -481,28 +471,13 @@
 },
 {
   "directory": "/home/thomas/simple-llama.cpp/build/examples/llava",
-  "command": "/usr/bin/c++ -DGGML_BACKEND_SHARED -DGGML_SHARED -DGGML_USE_CPU -DLLAMA_BUILD -DLLAMA_SHARED -I/home/thomas/simple-llama.cpp/examples -I/home/thomas/simple-llama.cpp/examples/llava/. -I/home/thomas/simple-llama.cpp/examples/llava/../.. -I/home/thomas/simple-llama.cpp/examples/llava/../../common -I/home/thomas/simple-llama.cpp/ggml/src/../include -I/home/thomas/simple-llama.cpp/src/. -I/home/thomas/simple-llama.cpp/src/../include -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -Wno-cast-qual -o CMakeFiles/mtmd.dir/mtmd.cpp.o -c /home/thomas/simple-llama.cpp/examples/llava/mtmd.cpp",
-  "file": "/home/thomas/simple-llama.cpp/examples/llava/mtmd.cpp"
+  "command": "/usr/bin/c++ -DGGML_BACKEND_SHARED -DGGML_SHARED -DGGML_USE_CPU -DLLAMA_SHARED -DLLAMA_USE_CURL -I/home/thomas/simple-llama.cpp/examples -I/home/thomas/simple-llama.cpp/common/. -I/home/thomas/simple-llama.cpp/src/. -I/home/thomas/simple-llama.cpp/src/../include -I/home/thomas/simple-llama.cpp/ggml/src/../include -I/home/thomas/simple-llama.cpp/examples/llava/. -I/home/thomas/simple-llama.cpp/examples/llava/../.. -I/home/thomas/simple-llama.cpp/examples/llava/../../common -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o -c /home/thomas/simple-llama.cpp/examples/llava/llava-cli.cpp",
+  "file": "/home/thomas/simple-llama.cpp/examples/llava/llava-cli.cpp"
 },
 {
   "directory": "/home/thomas/simple-llama.cpp/build/examples/llava",
-  "command": "/usr/bin/c++ -DGGML_BACKEND_SHARED -DGGML_SHARED -DGGML_USE_CPU -DLLAMA_BUILD -DLLAMA_SHARED -I/home/thomas/simple-llama.cpp/examples -I/home/thomas/simple-llama.cpp/examples/llava/. -I/home/thomas/simple-llama.cpp/examples/llava/../.. -I/home/thomas/simple-llama.cpp/examples/llava/../../common -I/home/thomas/simple-llama.cpp/ggml/src/../include -I/home/thomas/simple-llama.cpp/src/. -I/home/thomas/simple-llama.cpp/src/../include -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -Wno-cast-qual -o CMakeFiles/mtmd.dir/clip.cpp.o -c /home/thomas/simple-llama.cpp/examples/llava/clip.cpp",
-  "file": "/home/thomas/simple-llama.cpp/examples/llava/clip.cpp"
-},
-{
-  "directory": "/home/thomas/simple-llama.cpp/build/examples/llava",
-  "command": "/usr/bin/c++  -I/home/thomas/simple-llama.cpp/examples -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o -c /home/thomas/simple-llama.cpp/examples/llava/deprecation-warning.cpp",
-  "file": "/home/thomas/simple-llama.cpp/examples/llava/deprecation-warning.cpp"
-},
-{
-  "directory": "/home/thomas/simple-llama.cpp/build/examples/llava",
-  "command": "/usr/bin/c++  -I/home/thomas/simple-llama.cpp/examples -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.o -c /home/thomas/simple-llama.cpp/examples/llava/deprecation-warning.cpp",
-  "file": "/home/thomas/simple-llama.cpp/examples/llava/deprecation-warning.cpp"
-},
-{
-  "directory": "/home/thomas/simple-llama.cpp/build/examples/llava",
-  "command": "/usr/bin/c++  -I/home/thomas/simple-llama.cpp/examples -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o CMakeFiles/llama-minicpmv-cli.dir/deprecation-warning.cpp.o -c /home/thomas/simple-llama.cpp/examples/llava/deprecation-warning.cpp",
-  "file": "/home/thomas/simple-llama.cpp/examples/llava/deprecation-warning.cpp"
+  "command": "/usr/bin/c++ -DGGML_BACKEND_SHARED -DGGML_SHARED -DGGML_USE_CPU -DLLAMA_SHARED -DLLAMA_USE_CURL -I/home/thomas/simple-llama.cpp/examples -I/home/thomas/simple-llama.cpp/common/. -I/home/thomas/simple-llama.cpp/src/. -I/home/thomas/simple-llama.cpp/src/../include -I/home/thomas/simple-llama.cpp/ggml/src/../include -I/home/thomas/simple-llama.cpp/examples/llava/. -I/home/thomas/simple-llama.cpp/examples/llava/../.. -I/home/thomas/simple-llama.cpp/examples/llava/../../common -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.o -c /home/thomas/simple-llama.cpp/examples/llava/minicpmv-cli.cpp",
+  "file": "/home/thomas/simple-llama.cpp/examples/llava/minicpmv-cli.cpp"
 },
 {
   "directory": "/home/thomas/simple-llama.cpp/build/examples/llava",
@@ -511,8 +486,8 @@
 },
 {
   "directory": "/home/thomas/simple-llama.cpp/build/examples/llava",
-  "command": "/usr/bin/c++ -DGGML_BACKEND_SHARED -DGGML_SHARED -DGGML_USE_CPU -DLLAMA_SHARED -DLLAMA_USE_CURL -I/home/thomas/simple-llama.cpp/examples -I/home/thomas/simple-llama.cpp/common/. -I/home/thomas/simple-llama.cpp/src/. -I/home/thomas/simple-llama.cpp/src/../include -I/home/thomas/simple-llama.cpp/ggml/src/../include -I/home/thomas/simple-llama.cpp/examples/llava/. -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o CMakeFiles/llama-mtmd-cli.dir/mtmd-cli.cpp.o -c /home/thomas/simple-llama.cpp/examples/llava/mtmd-cli.cpp",
-  "file": "/home/thomas/simple-llama.cpp/examples/llava/mtmd-cli.cpp"
+  "command": "/usr/bin/c++ -DGGML_BACKEND_SHARED -DGGML_SHARED -DGGML_USE_CPU -DLLAMA_SHARED -DLLAMA_USE_CURL -I/home/thomas/simple-llama.cpp/examples -I/home/thomas/simple-llama.cpp/common/. -I/home/thomas/simple-llama.cpp/src/. -I/home/thomas/simple-llama.cpp/src/../include -I/home/thomas/simple-llama.cpp/ggml/src/../include -I/home/thomas/simple-llama.cpp/examples/llava/. -I/home/thomas/simple-llama.cpp/examples/llava/../.. -I/home/thomas/simple-llama.cpp/examples/llava/../../common -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi -o CMakeFiles/llama-gemma3-cli.dir/gemma3-cli.cpp.o -c /home/thomas/simple-llama.cpp/examples/llava/gemma3-cli.cpp",
+  "file": "/home/thomas/simple-llama.cpp/examples/llava/gemma3-cli.cpp"
 },
 {
   "directory": "/home/thomas/simple-llama.cpp/build/examples/llava",

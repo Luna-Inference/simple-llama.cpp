@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "../../bin/llama-minicpmv-cli"
   "../../bin/llama-minicpmv-cli.pdb"
-  "CMakeFiles/llama-minicpmv-cli.dir/deprecation-warning.cpp.o"
-  "CMakeFiles/llama-minicpmv-cli.dir/deprecation-warning.cpp.o.d"
+  "CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.o"
+  "CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

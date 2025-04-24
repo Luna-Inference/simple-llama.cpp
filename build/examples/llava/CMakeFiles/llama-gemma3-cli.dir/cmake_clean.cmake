@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "../../bin/llama-gemma3-cli"
   "../../bin/llama-gemma3-cli.pdb"
-  "CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.o"
-  "CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.o.d"
+  "CMakeFiles/llama-gemma3-cli.dir/gemma3-cli.cpp.o"
+  "CMakeFiles/llama-gemma3-cli.dir/gemma3-cli.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

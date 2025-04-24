@@ -69,29 +69,39 @@ include examples/llava/CMakeFiles/llama-llava-cli.dir/progress.make
 # Include the compile flags for this target's objects.
 include examples/llava/CMakeFiles/llama-llava-cli.dir/flags.make
 
-examples/llava/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o: examples/llava/CMakeFiles/llama-llava-cli.dir/flags.make
-examples/llava/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o: /home/thomas/simple-llama.cpp/examples/llava/deprecation-warning.cpp
-examples/llava/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o: examples/llava/CMakeFiles/llama-llava-cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/simple-llama.cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/llava/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o"
-	cd /home/thomas/simple-llama.cpp/build/examples/llava && ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/llava/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o -MF CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o.d -o CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o -c /home/thomas/simple-llama.cpp/examples/llava/deprecation-warning.cpp
+examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o: examples/llava/CMakeFiles/llama-llava-cli.dir/flags.make
+examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o: /home/thomas/simple-llama.cpp/examples/llava/llava-cli.cpp
+examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o: examples/llava/CMakeFiles/llama-llava-cli.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/simple-llama.cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o"
+	cd /home/thomas/simple-llama.cpp/build/examples/llava && ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o -MF CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o.d -o CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o -c /home/thomas/simple-llama.cpp/examples/llava/llava-cli.cpp
 
-examples/llava/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.i"
-	cd /home/thomas/simple-llama.cpp/build/examples/llava && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thomas/simple-llama.cpp/examples/llava/deprecation-warning.cpp > CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.i
+examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.i"
+	cd /home/thomas/simple-llama.cpp/build/examples/llava && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thomas/simple-llama.cpp/examples/llava/llava-cli.cpp > CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.i
 
-examples/llava/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.s"
-	cd /home/thomas/simple-llama.cpp/build/examples/llava && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thomas/simple-llama.cpp/examples/llava/deprecation-warning.cpp -o CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.s
+examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.s"
+	cd /home/thomas/simple-llama.cpp/build/examples/llava && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thomas/simple-llama.cpp/examples/llava/llava-cli.cpp -o CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.s
 
 # Object files for target llama-llava-cli
 llama__llava__cli_OBJECTS = \
-"CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o"
+"CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o"
 
 # External object files for target llama-llava-cli
-llama__llava__cli_EXTERNAL_OBJECTS =
+llama__llava__cli_EXTERNAL_OBJECTS = \
+"/home/thomas/simple-llama.cpp/build/examples/llava/CMakeFiles/llava.dir/llava.cpp.o" \
+"/home/thomas/simple-llama.cpp/build/examples/llava/CMakeFiles/llava.dir/clip.cpp.o"
 
-bin/llama-llava-cli: examples/llava/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o
+bin/llama-llava-cli: examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o
+bin/llama-llava-cli: examples/llava/CMakeFiles/llava.dir/llava.cpp.o
+bin/llama-llava-cli: examples/llava/CMakeFiles/llava.dir/clip.cpp.o
 bin/llama-llava-cli: examples/llava/CMakeFiles/llama-llava-cli.dir/build.make
+bin/llama-llava-cli: common/libcommon.a
+bin/llama-llava-cli: /usr/lib/aarch64-linux-gnu/libcurl.so
+bin/llama-llava-cli: bin/libllama.so
+bin/llama-llava-cli: bin/libggml.so
+bin/llama-llava-cli: bin/libggml-cpu.so
+bin/llama-llava-cli: bin/libggml-base.so
 bin/llama-llava-cli: examples/llava/CMakeFiles/llama-llava-cli.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/simple-llama.cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/llama-llava-cli"
 	cd /home/thomas/simple-llama.cpp/build/examples/llava && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/llama-llava-cli.dir/link.txt --verbose=$(VERBOSE)

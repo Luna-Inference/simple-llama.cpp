@@ -110,10 +110,10 @@ bin/llama-run: examples/run/CMakeFiles/llama-run.dir/linenoise.cpp/linenoise.cpp
 bin/llama-run: examples/run/CMakeFiles/llama-run.dir/build.make
 bin/llama-run: common/libcommon.a
 bin/llama-run: bin/libllama.so
-bin/llama-run: /usr/lib/aarch64-linux-gnu/libcurl.so
 bin/llama-run: bin/libggml.so
 bin/llama-run: bin/libggml-cpu.so
 bin/llama-run: bin/libggml-base.so
+bin/llama-run: /usr/lib/aarch64-linux-gnu/libcurl.so
 bin/llama-run: examples/run/CMakeFiles/llama-run.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/simple-llama.cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/llama-run"
 	cd /home/thomas/simple-llama.cpp/build/examples/run && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/llama-run.dir/link.txt --verbose=$(VERBOSE)

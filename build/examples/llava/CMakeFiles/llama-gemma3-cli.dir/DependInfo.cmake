@@ -8,11 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/thomas/simple-llama.cpp/examples/llava/deprecation-warning.cpp" "examples/llava/CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.o" "gcc" "examples/llava/CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.o.d"
+  "/home/thomas/simple-llama.cpp/examples/llava/gemma3-cli.cpp" "examples/llava/CMakeFiles/llama-gemma3-cli.dir/gemma3-cli.cpp.o" "gcc" "examples/llava/CMakeFiles/llama-gemma3-cli.dir/gemma3-cli.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/thomas/simple-llama.cpp/build/common/CMakeFiles/common.dir/DependInfo.cmake"
+  "/home/thomas/simple-llama.cpp/build/src/CMakeFiles/llama.dir/DependInfo.cmake"
+  "/home/thomas/simple-llama.cpp/build/ggml/src/CMakeFiles/ggml.dir/DependInfo.cmake"
+  "/home/thomas/simple-llama.cpp/build/ggml/src/CMakeFiles/ggml-cpu.dir/DependInfo.cmake"
+  "/home/thomas/simple-llama.cpp/build/ggml/src/CMakeFiles/ggml-base.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -187,7 +187,7 @@ examples/server/CMakeFiles/llama-server.dir/server.cpp.o: \
  /usr/include/c++/12/bits/sstream.tcc \
  /home/thomas/simple-llama.cpp/common/./log.h \
  /home/thomas/simple-llama.cpp/src/../include/llama.h \
- /home/thomas/simple-llama.cpp/common/./base64.hpp \
+ /home/thomas/simple-llama.cpp/common/base64.hpp \
  /usr/include/c++/12/iterator /usr/include/c++/12/bits/stream_iterator.h \
  /home/thomas/simple-llama.cpp/examples/server/httplib.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \

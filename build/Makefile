@@ -614,32 +614,6 @@ common/fast:
 .PHONY : common/fast
 
 #=============================================================================
-# Target rules for targets named llama-batched-bench
-
-# Build rule for target.
-llama-batched-bench: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 llama-batched-bench
-.PHONY : llama-batched-bench
-
-# fast build rule for target.
-llama-batched-bench/fast:
-	$(MAKE) $(MAKESILENT) -f examples/batched-bench/CMakeFiles/llama-batched-bench.dir/build.make examples/batched-bench/CMakeFiles/llama-batched-bench.dir/build
-.PHONY : llama-batched-bench/fast
-
-#=============================================================================
-# Target rules for targets named llama-batched
-
-# Build rule for target.
-llama-batched: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 llama-batched
-.PHONY : llama-batched
-
-# fast build rule for target.
-llama-batched/fast:
-	$(MAKE) $(MAKESILENT) -f examples/batched/CMakeFiles/llama-batched.dir/build.make examples/batched/CMakeFiles/llama-batched.dir/build
-.PHONY : llama-batched/fast
-
-#=============================================================================
 # Target rules for targets named llama-embedding
 
 # Build rule for target.
@@ -1173,45 +1147,6 @@ llava_shared/fast:
 .PHONY : llava_shared/fast
 
 #=============================================================================
-# Target rules for targets named mtmd
-
-# Build rule for target.
-mtmd: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mtmd
-.PHONY : mtmd
-
-# fast build rule for target.
-mtmd/fast:
-	$(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/mtmd.dir/build.make examples/llava/CMakeFiles/mtmd.dir/build
-.PHONY : mtmd/fast
-
-#=============================================================================
-# Target rules for targets named mtmd_static
-
-# Build rule for target.
-mtmd_static: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mtmd_static
-.PHONY : mtmd_static
-
-# fast build rule for target.
-mtmd_static/fast:
-	$(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/mtmd_static.dir/build.make examples/llava/CMakeFiles/mtmd_static.dir/build
-.PHONY : mtmd_static/fast
-
-#=============================================================================
-# Target rules for targets named mtmd_shared
-
-# Build rule for target.
-mtmd_shared: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mtmd_shared
-.PHONY : mtmd_shared
-
-# fast build rule for target.
-mtmd_shared/fast:
-	$(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/mtmd_shared.dir/build.make examples/llava/CMakeFiles/mtmd_shared.dir/build
-.PHONY : mtmd_shared/fast
-
-#=============================================================================
 # Target rules for targets named llama-llava-cli
 
 # Build rule for target.
@@ -1223,19 +1158,6 @@ llama-llava-cli: cmake_check_build_system
 llama-llava-cli/fast:
 	$(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/build
 .PHONY : llama-llava-cli/fast
-
-#=============================================================================
-# Target rules for targets named llama-gemma3-cli
-
-# Build rule for target.
-llama-gemma3-cli: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 llama-gemma3-cli
-.PHONY : llama-gemma3-cli
-
-# fast build rule for target.
-llama-gemma3-cli/fast:
-	$(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-gemma3-cli.dir/build.make examples/llava/CMakeFiles/llama-gemma3-cli.dir/build
-.PHONY : llama-gemma3-cli/fast
 
 #=============================================================================
 # Target rules for targets named llama-minicpmv-cli
@@ -1264,17 +1186,17 @@ llama-qwen2vl-cli/fast:
 .PHONY : llama-qwen2vl-cli/fast
 
 #=============================================================================
-# Target rules for targets named llama-mtmd-cli
+# Target rules for targets named llama-gemma3-cli
 
 # Build rule for target.
-llama-mtmd-cli: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 llama-mtmd-cli
-.PHONY : llama-mtmd-cli
+llama-gemma3-cli: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 llama-gemma3-cli
+.PHONY : llama-gemma3-cli
 
 # fast build rule for target.
-llama-mtmd-cli/fast:
-	$(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-mtmd-cli.dir/build.make examples/llava/CMakeFiles/llama-mtmd-cli.dir/build
-.PHONY : llama-mtmd-cli/fast
+llama-gemma3-cli/fast:
+	$(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-gemma3-cli.dir/build.make examples/llava/CMakeFiles/llama-gemma3-cli.dir/build
+.PHONY : llama-gemma3-cli/fast
 
 #=============================================================================
 # Target rules for targets named llama-llava-clip-quantize-cli
@@ -1336,8 +1258,6 @@ help:
 	@echo "... ggml-base"
 	@echo "... ggml-cpu"
 	@echo "... llama"
-	@echo "... llama-batched"
-	@echo "... llama-batched-bench"
 	@echo "... llama-bench"
 	@echo "... llama-cli"
 	@echo "... llama-convert-llama2c-to-ggml"
@@ -1362,7 +1282,6 @@ help:
 	@echo "... llama-lookup-merge"
 	@echo "... llama-lookup-stats"
 	@echo "... llama-minicpmv-cli"
-	@echo "... llama-mtmd-cli"
 	@echo "... llama-parallel"
 	@echo "... llama-passkey"
 	@echo "... llama-perplexity"
@@ -1382,9 +1301,6 @@ help:
 	@echo "... llava"
 	@echo "... llava_shared"
 	@echo "... llava_static"
-	@echo "... mtmd"
-	@echo "... mtmd_shared"
-	@echo "... mtmd_static"
 	@echo "... sha1"
 	@echo "... sha256"
 	@echo "... xxhash"

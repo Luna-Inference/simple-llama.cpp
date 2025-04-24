@@ -214,48 +214,6 @@ llava_shared/fast:
 .PHONY : llava_shared/fast
 
 # Convenience name for target.
-examples/llava/CMakeFiles/mtmd.dir/rule:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/mtmd.dir/rule
-.PHONY : examples/llava/CMakeFiles/mtmd.dir/rule
-
-# Convenience name for target.
-mtmd: examples/llava/CMakeFiles/mtmd.dir/rule
-.PHONY : mtmd
-
-# fast build rule for target.
-mtmd/fast:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/mtmd.dir/build.make examples/llava/CMakeFiles/mtmd.dir/build
-.PHONY : mtmd/fast
-
-# Convenience name for target.
-examples/llava/CMakeFiles/mtmd_static.dir/rule:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/mtmd_static.dir/rule
-.PHONY : examples/llava/CMakeFiles/mtmd_static.dir/rule
-
-# Convenience name for target.
-mtmd_static: examples/llava/CMakeFiles/mtmd_static.dir/rule
-.PHONY : mtmd_static
-
-# fast build rule for target.
-mtmd_static/fast:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/mtmd_static.dir/build.make examples/llava/CMakeFiles/mtmd_static.dir/build
-.PHONY : mtmd_static/fast
-
-# Convenience name for target.
-examples/llava/CMakeFiles/mtmd_shared.dir/rule:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/mtmd_shared.dir/rule
-.PHONY : examples/llava/CMakeFiles/mtmd_shared.dir/rule
-
-# Convenience name for target.
-mtmd_shared: examples/llava/CMakeFiles/mtmd_shared.dir/rule
-.PHONY : mtmd_shared
-
-# fast build rule for target.
-mtmd_shared/fast:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/mtmd_shared.dir/build.make examples/llava/CMakeFiles/mtmd_shared.dir/build
-.PHONY : mtmd_shared/fast
-
-# Convenience name for target.
 examples/llava/CMakeFiles/llama-llava-cli.dir/rule:
 	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llama-llava-cli.dir/rule
 .PHONY : examples/llava/CMakeFiles/llama-llava-cli.dir/rule
@@ -268,20 +226,6 @@ llama-llava-cli: examples/llava/CMakeFiles/llama-llava-cli.dir/rule
 llama-llava-cli/fast:
 	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/build
 .PHONY : llama-llava-cli/fast
-
-# Convenience name for target.
-examples/llava/CMakeFiles/llama-gemma3-cli.dir/rule:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llama-gemma3-cli.dir/rule
-.PHONY : examples/llava/CMakeFiles/llama-gemma3-cli.dir/rule
-
-# Convenience name for target.
-llama-gemma3-cli: examples/llava/CMakeFiles/llama-gemma3-cli.dir/rule
-.PHONY : llama-gemma3-cli
-
-# fast build rule for target.
-llama-gemma3-cli/fast:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-gemma3-cli.dir/build.make examples/llava/CMakeFiles/llama-gemma3-cli.dir/build
-.PHONY : llama-gemma3-cli/fast
 
 # Convenience name for target.
 examples/llava/CMakeFiles/llama-minicpmv-cli.dir/rule:
@@ -312,18 +256,18 @@ llama-qwen2vl-cli/fast:
 .PHONY : llama-qwen2vl-cli/fast
 
 # Convenience name for target.
-examples/llava/CMakeFiles/llama-mtmd-cli.dir/rule:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llama-mtmd-cli.dir/rule
-.PHONY : examples/llava/CMakeFiles/llama-mtmd-cli.dir/rule
+examples/llava/CMakeFiles/llama-gemma3-cli.dir/rule:
+	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llama-gemma3-cli.dir/rule
+.PHONY : examples/llava/CMakeFiles/llama-gemma3-cli.dir/rule
 
 # Convenience name for target.
-llama-mtmd-cli: examples/llava/CMakeFiles/llama-mtmd-cli.dir/rule
-.PHONY : llama-mtmd-cli
+llama-gemma3-cli: examples/llava/CMakeFiles/llama-gemma3-cli.dir/rule
+.PHONY : llama-gemma3-cli
 
 # fast build rule for target.
-llama-mtmd-cli/fast:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-mtmd-cli.dir/build.make examples/llava/CMakeFiles/llama-mtmd-cli.dir/build
-.PHONY : llama-mtmd-cli/fast
+llama-gemma3-cli/fast:
+	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-gemma3-cli.dir/build.make examples/llava/CMakeFiles/llama-gemma3-cli.dir/build
+.PHONY : llama-gemma3-cli/fast
 
 # Convenience name for target.
 examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/rule:
@@ -369,7 +313,6 @@ clip.o: clip.cpp.o
 # target to build an object file
 clip.cpp.o:
 	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/clip.cpp.o
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/mtmd.dir/build.make examples/llava/CMakeFiles/mtmd.dir/clip.cpp.o
 .PHONY : clip.cpp.o
 
 clip.i: clip.cpp.i
@@ -378,7 +321,6 @@ clip.i: clip.cpp.i
 # target to preprocess a source file
 clip.cpp.i:
 	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/clip.cpp.i
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/mtmd.dir/build.make examples/llava/CMakeFiles/mtmd.dir/clip.cpp.i
 .PHONY : clip.cpp.i
 
 clip.s: clip.cpp.s
@@ -387,38 +329,55 @@ clip.s: clip.cpp.s
 # target to generate assembly for a file
 clip.cpp.s:
 	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/clip.cpp.s
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/mtmd.dir/build.make examples/llava/CMakeFiles/mtmd.dir/clip.cpp.s
 .PHONY : clip.cpp.s
 
-deprecation-warning.o: deprecation-warning.cpp.o
-.PHONY : deprecation-warning.o
+gemma3-cli.o: gemma3-cli.cpp.o
+.PHONY : gemma3-cli.o
 
 # target to build an object file
-deprecation-warning.cpp.o:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-gemma3-cli.dir/build.make examples/llava/CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.o
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/deprecation-warning.cpp.o
-.PHONY : deprecation-warning.cpp.o
+gemma3-cli.cpp.o:
+	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-gemma3-cli.dir/build.make examples/llava/CMakeFiles/llama-gemma3-cli.dir/gemma3-cli.cpp.o
+.PHONY : gemma3-cli.cpp.o
 
-deprecation-warning.i: deprecation-warning.cpp.i
-.PHONY : deprecation-warning.i
+gemma3-cli.i: gemma3-cli.cpp.i
+.PHONY : gemma3-cli.i
 
 # target to preprocess a source file
-deprecation-warning.cpp.i:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.i
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-gemma3-cli.dir/build.make examples/llava/CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.i
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/deprecation-warning.cpp.i
-.PHONY : deprecation-warning.cpp.i
+gemma3-cli.cpp.i:
+	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-gemma3-cli.dir/build.make examples/llava/CMakeFiles/llama-gemma3-cli.dir/gemma3-cli.cpp.i
+.PHONY : gemma3-cli.cpp.i
 
-deprecation-warning.s: deprecation-warning.cpp.s
-.PHONY : deprecation-warning.s
+gemma3-cli.s: gemma3-cli.cpp.s
+.PHONY : gemma3-cli.s
 
 # target to generate assembly for a file
-deprecation-warning.cpp.s:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.s
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-gemma3-cli.dir/build.make examples/llava/CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.s
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/deprecation-warning.cpp.s
-.PHONY : deprecation-warning.cpp.s
+gemma3-cli.cpp.s:
+	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-gemma3-cli.dir/build.make examples/llava/CMakeFiles/llama-gemma3-cli.dir/gemma3-cli.cpp.s
+.PHONY : gemma3-cli.cpp.s
+
+llava-cli.o: llava-cli.cpp.o
+.PHONY : llava-cli.o
+
+# target to build an object file
+llava-cli.cpp.o:
+	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o
+.PHONY : llava-cli.cpp.o
+
+llava-cli.i: llava-cli.cpp.i
+.PHONY : llava-cli.i
+
+# target to preprocess a source file
+llava-cli.cpp.i:
+	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.i
+.PHONY : llava-cli.cpp.i
+
+llava-cli.s: llava-cli.cpp.s
+.PHONY : llava-cli.s
+
+# target to generate assembly for a file
+llava-cli.cpp.s:
+	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.s
+.PHONY : llava-cli.cpp.s
 
 llava.o: llava.cpp.o
 .PHONY : llava.o
@@ -444,53 +403,29 @@ llava.cpp.s:
 	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/llava.cpp.s
 .PHONY : llava.cpp.s
 
-mtmd-cli.o: mtmd-cli.cpp.o
-.PHONY : mtmd-cli.o
+minicpmv-cli.o: minicpmv-cli.cpp.o
+.PHONY : minicpmv-cli.o
 
 # target to build an object file
-mtmd-cli.cpp.o:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-mtmd-cli.dir/build.make examples/llava/CMakeFiles/llama-mtmd-cli.dir/mtmd-cli.cpp.o
-.PHONY : mtmd-cli.cpp.o
+minicpmv-cli.cpp.o:
+	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.o
+.PHONY : minicpmv-cli.cpp.o
 
-mtmd-cli.i: mtmd-cli.cpp.i
-.PHONY : mtmd-cli.i
-
-# target to preprocess a source file
-mtmd-cli.cpp.i:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-mtmd-cli.dir/build.make examples/llava/CMakeFiles/llama-mtmd-cli.dir/mtmd-cli.cpp.i
-.PHONY : mtmd-cli.cpp.i
-
-mtmd-cli.s: mtmd-cli.cpp.s
-.PHONY : mtmd-cli.s
-
-# target to generate assembly for a file
-mtmd-cli.cpp.s:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-mtmd-cli.dir/build.make examples/llava/CMakeFiles/llama-mtmd-cli.dir/mtmd-cli.cpp.s
-.PHONY : mtmd-cli.cpp.s
-
-mtmd.o: mtmd.cpp.o
-.PHONY : mtmd.o
-
-# target to build an object file
-mtmd.cpp.o:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/mtmd.dir/build.make examples/llava/CMakeFiles/mtmd.dir/mtmd.cpp.o
-.PHONY : mtmd.cpp.o
-
-mtmd.i: mtmd.cpp.i
-.PHONY : mtmd.i
+minicpmv-cli.i: minicpmv-cli.cpp.i
+.PHONY : minicpmv-cli.i
 
 # target to preprocess a source file
-mtmd.cpp.i:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/mtmd.dir/build.make examples/llava/CMakeFiles/mtmd.dir/mtmd.cpp.i
-.PHONY : mtmd.cpp.i
+minicpmv-cli.cpp.i:
+	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.i
+.PHONY : minicpmv-cli.cpp.i
 
-mtmd.s: mtmd.cpp.s
-.PHONY : mtmd.s
+minicpmv-cli.s: minicpmv-cli.cpp.s
+.PHONY : minicpmv-cli.s
 
 # target to generate assembly for a file
-mtmd.cpp.s:
-	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/mtmd.dir/build.make examples/llava/CMakeFiles/mtmd.dir/mtmd.cpp.s
-.PHONY : mtmd.cpp.s
+minicpmv-cli.cpp.s:
+	cd /home/thomas/simple-llama.cpp/build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.s
+.PHONY : minicpmv-cli.cpp.s
 
 qwen2vl-cli.o: qwen2vl-cli.cpp.o
 .PHONY : qwen2vl-cli.o
@@ -533,32 +468,28 @@ help:
 	@echo "... llama-llava-cli"
 	@echo "... llama-llava-clip-quantize-cli"
 	@echo "... llama-minicpmv-cli"
-	@echo "... llama-mtmd-cli"
 	@echo "... llama-qwen2vl-cli"
 	@echo "... llava"
 	@echo "... llava_shared"
 	@echo "... llava_static"
-	@echo "... mtmd"
-	@echo "... mtmd_shared"
-	@echo "... mtmd_static"
 	@echo "... clip-quantize-cli.o"
 	@echo "... clip-quantize-cli.i"
 	@echo "... clip-quantize-cli.s"
 	@echo "... clip.o"
 	@echo "... clip.i"
 	@echo "... clip.s"
-	@echo "... deprecation-warning.o"
-	@echo "... deprecation-warning.i"
-	@echo "... deprecation-warning.s"
+	@echo "... gemma3-cli.o"
+	@echo "... gemma3-cli.i"
+	@echo "... gemma3-cli.s"
+	@echo "... llava-cli.o"
+	@echo "... llava-cli.i"
+	@echo "... llava-cli.s"
 	@echo "... llava.o"
 	@echo "... llava.i"
 	@echo "... llava.s"
-	@echo "... mtmd-cli.o"
-	@echo "... mtmd-cli.i"
-	@echo "... mtmd-cli.s"
-	@echo "... mtmd.o"
-	@echo "... mtmd.i"
-	@echo "... mtmd.s"
+	@echo "... minicpmv-cli.o"
+	@echo "... minicpmv-cli.i"
+	@echo "... minicpmv-cli.s"
 	@echo "... qwen2vl-cli.o"
 	@echo "... qwen2vl-cli.i"
 	@echo "... qwen2vl-cli.s"
