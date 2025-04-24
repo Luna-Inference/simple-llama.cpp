@@ -15,7 +15,7 @@ fi
 
 echo 'running test'
 ./build/bin/llama-cli -m ./gguf/Llama-3.2-1B.Q8_0.gguf -p "Hello, how are you?" -n 128 -no-cnv | tee test_output.txt
-
+./build/bin/llama-bench -m ./gguf/Llama-3.2-1B.Q8_0.gguf
 # Debug GH_PAGES_TOKEN and clone URL
 if [ -z "$GH_PAGES_TOKEN" ]; then
   echo "ERROR: GH_PAGES_TOKEN is not set"
