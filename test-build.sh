@@ -22,8 +22,8 @@ cd gh-pages
 echo '<pre>' >> index.html
 cat ../test_output.txt >> index.html
 echo '</pre>' >> index.html
-git config user.name "ThomasVuNguyen"
+# git config user.name "ThomasVuNguyen"
 git config user.email "tungvunguyennguyen@gmail.com"
 git add index.html
 git commit -m "Update index.html with latest test output"
-git push origin main
+git push https://x-access-token:${GH_PAGES_TOKEN}@github.com/Luna-Inference/Luna-inference.github.io.git main
