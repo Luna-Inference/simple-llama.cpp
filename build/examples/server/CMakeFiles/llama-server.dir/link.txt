@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/llama-server.dir/server.cpp.o" -o ../../bin/llama-server  -Wl,-rpath,/home/thomas/simple-llama.cpp/build/bin: ../../common/libcommon.a /usr/lib/aarch64-linux-gnu/libcurl.so ../../bin/libllama.so ../../bin/libggml.so ../../bin/libggml-cpu.so ../../bin/libggml-base.so 

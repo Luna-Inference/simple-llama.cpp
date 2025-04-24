@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/llama-gemma3-cli.dir/gemma3-cli.cpp.o" CMakeFiles/llava.dir/llava.cpp.o CMakeFiles/llava.dir/clip.cpp.o -o ../../bin/llama-gemma3-cli  -Wl,-rpath,/home/thomas/simple-llama.cpp/build/bin: ../../common/libcommon.a /usr/lib/aarch64-linux-gnu/libcurl.so ../../bin/libllama.so ../../bin/libggml.so ../../bin/libggml-cpu.so ../../bin/libggml-base.so 
