@@ -23,10 +23,10 @@ else
   echo "GH_PAGES_TOKEN length: ${#GH_PAGES_TOKEN}"
 fi
 
-echo "About to clone pages repo with URL: https://x-access-token:${GH_PAGES_TOKEN}@github.com/ThomasVuNguyen/thomasvunguyen.github.io.git"
+echo "About to clone pages repo with URL: https://x-access-token:${GH_PAGES_TOKEN}@github.com/Luna-Inference/Luna-inference.github.io.git"
 
 # Publish test output to GitHub Pages
-git clone https://x-access-token:${GH_PAGES_TOKEN}@github.com/ThomasVuNguyen/thomasvunguyen.github.io.git gh-pages
+git clone https://x-access-token:${GH_PAGES_TOKEN}@github.com/Luna-Inference/Luna-inference.github.io.gitt gh-pages
 cd gh-pages
 echo '<pre>' >> index.html
 cat ../test_output.txt >> index.html
@@ -35,4 +35,4 @@ git config user.name "tungvunguyennguyen@gmail.com"
 git config user.email "tungvunguyennguyen@gmail.com"
 git add .
 git commit -m "Update index.html with latest test output"
-git push https://x-access-token:${GH_PAGES_TOKEN}@github.com/ThomasVuNguyen/thomasvunguyen.github.io.git main
+git push https://x-access-token:${GH_PAGES_TOKEN}@github.com/Luna-Inference/Luna-inference.github.io.git main
