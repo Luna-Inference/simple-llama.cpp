@@ -38,15 +38,14 @@ echo "About to clone pages repo with URL: https://x-access-token:${GH_PAGES_TOKE
 git clone https://x-access-token:${GH_PAGES_TOKEN}@github.com/ThomasVuNguyen/thomasvunguyen.github.io.git gh-pages
 cd gh-pages
 
-echo "Prompt:" >> index.html
-echo "Tell me a fun fact" >> index.html
 echo '<pre>' >> index.html
-sed -n '1,/^Benchmark Results:/p' ../test_output.txt >> index.html
+awk '/^Prompt Output:/{f=1;next}/^Benchmark Results:/{f=0}f' ../test_output.txt >> index.html
 echo '</pre>' >> index.html
 
 echo '<pre>' >> index.html
-sed -n '/^Benchmark Results:/,$p' ../test_output.txt >> index.html
+awk '/^Benchmark Results:/{f=1;next}f' ../test_output.txt >> index.html
 echo '</pre>' >> index.html
+
 git config user.name "tungvunguyennguyen@gmail.com"
 git config user.email "tungvunguyennguyen@gmail.com"
 git add .
