@@ -14,4 +14,16 @@ fi
 # Running test
 
 echo 'running test'
-./build/bin/llama-cli -m ./gguf/Llama-3.2-1B.Q8_0.gguf -p "Hello, how are you?" -n 128 -no-cnv
+./build/bin/llama-cli -m ./gguf/Llama-3.2-1B.Q8_0.gguf -p "Hello, how are you?" -n 128 -no-cnv | tee test_output.txt
+
+# Publish test output to GitHub Pages
+git clone https://github.com/Luna-Inference/Luna-inference.github.io gh-pages
+cd gh-pages
+echo '<pre>' >> index.html
+cat ../test_output.txt >> index.html
+echo '</pre>' >> index.html
+git config user.name "github-actions[bot]"
+git config user.email "github-actions[bot]@users.noreply.github.com"
+git add index.html
+git commit -m "Update index.html with latest test output"
+git push origin main
